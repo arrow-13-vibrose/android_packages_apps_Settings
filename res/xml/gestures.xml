@@ -99,6 +99,12 @@
         android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
         settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
 
+    <Preference
+        android:key="gesture_adaptive_playback_summary"
+        android:title="@string/adaptive_playback_screen_title"
+        android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings"
+        settings:controller="com.android.settings.gestures.AdaptivePlaybackParentPreferenceController" />
+
     <SwitchPreference
         android:key="gesture_screen_off_udfps"
         android:title="@string/ambient_display_screen_off_udfps_title"
@@ -117,12 +123,6 @@
         android:title="@string/gesture_prevent_ringing_screen_title"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
         settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
-
-    <Preference
-        android:key="edge_light_settings"
-        android:title="@string/edge_light_title"
-        android:summary="@string/edge_light_summary"
-        android:fragment="com.android.settings.arrow.EdgeLightSettings" />
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="volume_button_music_control"
