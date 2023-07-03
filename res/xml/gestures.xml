@@ -118,6 +118,12 @@
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
         settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
 
+    <Preference
+        android:key="edge_light_settings"
+        android:title="@string/edge_light_title"
+        android:summary="@string/edge_light_summary"
+        android:fragment="com.android.settings.arrow.EdgeLightSettings" />
+
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="volume_button_music_control"
         android:title="@string/volume_button_music_control_title"
