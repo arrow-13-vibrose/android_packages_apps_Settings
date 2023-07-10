@@ -233,6 +233,16 @@
             android:summary="@string/network_traffic_summary"
             android:order="25"
             android:fragment="com.android.settings.arrow.NetworkTrafficSettings"/>
+
+           <com.arrow.support.preferences.CustomSystemSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="@*android:integer/config_qs_transparency"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
     </PreferenceCategory>
 
 </PreferenceScreen>
